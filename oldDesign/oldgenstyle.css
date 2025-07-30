@@ -1,0 +1,138 @@
+/* Basic reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f4f4f4;
+  color: #333;
+}
+
+/* Navigation */
+
+nav {
+  background-color: #8B4513;
+  padding: 1rem 2rem;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 1000;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}
+
+.nav-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  gap: 1.5rem;
+}
+
+nav a {
+  color: #fff;
+  font-weight: 500;
+  transition: color 0.3s;
+}
+
+nav a:hover {
+  color: #654321;
+}
+
+.content {
+  padding: 120px 20px 60px;
+  text-align: center;
+  background: linear-gradient(135deg, #00adb5, #393e46);
+  color: white;
+}
+
+/* Main content */
+.content {
+  text-align: center;
+  padding: 60px 20px;
+  background: linear-gradient(135deg, #D2691E, #CD853F);
+  color: white;
+}
+
+.content h1 {
+  font-size: 48px;
+  margin-bottom: 15px;
+  text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
+}
+
+.content p {
+  font-size: 20px;
+  font-style: italic;
+}
+
+/* Booking section */
+.booking-section {
+  background-color: white;
+  max-width: 600px;
+  margin: 50px auto;
+  padding: 30px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  border: 1px solid #ddd;
+}
+
+.booking-section h2 {
+  color: #8B4513;
+  font-size: 28px;
+  text-align: center;
+  margin-bottom: 25px;
+  border-bottom: 2px solid #D2691E;
+  padding-bottom: 10px;
+}
+
+.booking-form {
+  width: 100%;
+}
+
+.form-row {
+  margin-bottom: 15px;
+}
+
+button[type="submit"] {
+  background-color: #D2691E;
+  color: white;
+  padding: 12px 25px;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+  width: 100%;
+  margin-top: 10px;
+}
+
+button[type="submit"]:hover {
+  background-color: #B8860B;
+}
+
+/* Simple responsive */
+@media (max-width: 768px) {
+  .nav-container {
+    flex-direction: column;
+    text-align: center;
+  }
+  
+  .left-nav, .right-nav {
+    justify-content: center;
+    margin: 5px 0;
+  }
+  
+  .content h1 {
+    font-size: 36px;
+  }
+  
+  .booking-section {
+    margin: 30px 20px;
+  }
+}
